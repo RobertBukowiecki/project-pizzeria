@@ -27,6 +27,7 @@ class CartProduct {
     thisCartProduct.dom.remove = thisCartProduct.dom.wrapper.querySelector(select.cartProduct.remove);
   }
 
+
   initAmountWidget() {
     const thisCartProduct = this;
 
