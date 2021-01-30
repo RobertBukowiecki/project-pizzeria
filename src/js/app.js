@@ -4,9 +4,6 @@ import Cart from './components/cart.js';
 import Booking from './components/Booking.js';
 import Home from './components/Home.js';
 
-// import CartProduct from './components/cartProduct.js';
-// import AmountWidget from './components/amountWidget.js';
-
 const app = {
   initPages: function () {
     const thisApp = this;
@@ -17,8 +14,8 @@ const app = {
     const idFromHash = window.location.hash.replace('#/', '');
 
     let pageMatchingHash = thisApp.pages[0].id;
-    for(let page of thisApp.pages) {
-      if(page.id == idFromHash){
+    for (let page of thisApp.pages) {
+      if (page.id == idFromHash) {
         pageMatchingHash = page.id;
         break;
       }
@@ -108,8 +105,7 @@ const app = {
       app.cart.add(event.detail.product);
     });
   },
-  initBooking : function (){
-
+  initBooking: function () {
     const thisApp = this;
 
     const element = document.querySelector(select.containerOf.booking);
